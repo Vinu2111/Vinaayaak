@@ -1,31 +1,41 @@
-<h1 align="center">Hi 👋, I'm Vinayak Gote</h1>
-<h3 align="center">
-Backend Engineer | Java & Spring Boot | Building Production-Ready Systems
-</h3>
+<h1 align="center">Hi, I'm Vinayak Gote</h1>
+<h3 align="center">Backend Engineer · Java & Spring Boot · Pune</h3>
 
-- 🔭 Currently building **Crop Monitoring Application**  
-  (Spring Boot, REST APIs, MySQL, real-world backend workflows)
+---
 
-- 🚀 Actively working on **DevConnect** — a platform to practice real backend & production scenarios  
-  (Not tutorials. Not LeetCode. Real systems.)
+Backend engineer with 1.5 years of production experience, focused on building 
+reliable Java/Spring Boot systems. Currently contributing to open-source projects 
+in the Spring ecosystem — Zalando Logbook and related libraries.
 
-- 🌱 Deepening expertise in  
-  **Java, Spring Boot, MySQL, REST APIs, System Design & DSA**  
-  *(Golang — exploratory, secondary)*
+I write about what I build:
+👉 [hashnode](https://vinayak.hashnode.dev) · [dev.to](https://dev.to/vinayakgote2730)
 
-- 👯 Open to collaborating on **Backend-heavy Spring Boot projects**  
-  (APIs, databases, performance, debugging, system behavior)
+---
 
-- 📝 Writing consistently about backend engineering & learning journeys  
-  👉 https://vinayak.hashnode.dev  
-  👉 https://dev.to/vinayakgote2730
+### 🔧 Stack
+Java · Spring Boot · REST APIs · PostgreSQL · MySQL · JWT · Maven · Gradle · Git
 
-- 👨‍💻 Projects: https://github.com/Vinu2111
+---
 
-- 📫 Reach me at **vinayakgote44@gmail.com**
+### 🤝 Open Source Contributions
+| Project | Repo | Status |
+|---------|------|--------|
+| Zalando | logbook | ✅ Contributed |
+| — | — | — |
 
-- 📄 Resume:  
-  https://drive.google.com/file/d/1OjAc8dP9YawPjYw6KI2HRrQDMIgQypPE/view
+*(Actively contributing to Java/Spring OSS projects)*
 
-- ⚡ Fun fact:  
-  I enjoy debugging broken systems more than writing fresh code.
+---
+
+### 🏗️ Projects
+- **[Green-Crop](https://github.com/Vinu2111/Green-Crop)** — Spring Boot backend with RBAC, JWT auth, async processing
+- **[Blog Application](https://github.com/Vinu2111/Blog-Application-Backend-Frontend)** — REST API with Spring Security + JWT
+
+---
+
+### 📫 Reach me
+vinayakgote44@gmail.com · [LinkedIn](https://linkedin.com/in/vinayakgote) · [Resume](https://drive.google.com/file/d/1OjAc8dP9YawPjYw6KI2HRrQDMIgQypPE/view)
+
+---
+
+⚡ I enjoy debugging broken systems more than writing fresh code.
