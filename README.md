@@ -1,48 +1,82 @@
-<h1 align="center">Hi, I'm Vinayak Gote</h1>
-<h3 align="center">Java Backend Engineer · Open Source Contributor (Zalando · Adyen · Uber · Picnic · Debezium) · NVIDIA AI Aerial / 6G Developer Program Member</h3>
+<h1 align="center">Vinayak Gote</h1>
+<h3 align="center">Java Backend Engineer · OSS Contributor (Zalando · Adyen · Picnic · Debezium) · NVIDIA AI Aerial / 6G Developer Program</h3>
 
 <p align="center">
   <a href="https://linkedin.com/in/vinayakgote">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://github.com/Vinu2111">GitHub</a> &nbsp;·&nbsp;
   <a href="https://vinayak6g.hashnode.dev">Blog</a> &nbsp;·&nbsp;
+  <a href="https://dev.to/vinayakgote">Dev.to</a> &nbsp;·&nbsp;
   <a href="mailto:vinayakgote44@gmail.com">Email</a> &nbsp;·&nbsp;
   <a href="https://portfolio-gules-ten-40.vercel.app">Portfolio</a>
 </p>
 
 <br/>
 
-Backend engineer with hands-on production experience at **Wipro**, building enterprise REST APIs for VodafoneIdea telecom systems.
+Backend engineer at **Wipro**, building production REST APIs for VodafoneIdea telecom systems with Spring Boot 3. My strategy for breaking into product companies I respect: contribute real code to their OSS repos before applying. That's led to **2 merged PRs** across Zalando and Adyen, with **9 open PRs** in active review across 5 organizations including Picnic, Debezium, and SigNoz.
 
-Member of the **NVIDIA AI Aerial / 6G Developer Program** — building research tooling on top of the NVIDIA Sionna SDK.
+Member of the **NVIDIA AI Aerial / 6G Developer Program** after two merged bug fixes in the Sionna SDK, with a public mention from NVIDIA core maintainer Merlin Nimier-David.
 
-Actively contributing to open source Java libraries used in production by companies worldwide — **3 merged PRs** across Uber, Zalando, and Adyen, with **8 open PRs** in active review across 5 organizations.
+I write daily on [Hashnode](https://vinayak6g.hashnode.dev) and [Dev.to](https://dev.to/vinayakgote) backend engineering, OSS learnings, and Java deep-dives.
+
+---
+
+## 🟢 Currently
+
+- Landed a Refaster rule in **Picnic/error-prone-support** (#2275) rewrites `Optional.of(x).orElse(y)` to `requireNonNull(x)`, approach approved by Stephan202
+- Debezium PostgreSQL connector fix (#7462) — "Overall LGTM" from core maintainer vjuranek
+- Building [`picnic-store-intelligence`](https://github.com/Vinu2111/picnic-store-intelligence) — an architectural prototype exploring Picnic's Page Platform philosophy (server-driven layouts + per-customer section ranking)
+- Self-studying German toward Goethe-Institut certification
 
 ---
 
 ## 🤝 Open Source Contributions
 
-### ✅ Merged — 3 PRs
+### ✅ Merged — 2 PRs
 
-| # | Organization | Repository | Contribution | Status |
-|---|---|---|---|---|
-| 1 | **Uber** | [uber/NullAway #1546](https://github.com/uber/NullAway/pull/1546) | Report error when `@Initializer` is incorrectly used on a constructor — merged by core maintainer Manu Sridharan | ✅ Merged |
-| 2 | **Zalando** | [zalando/logbook #2301](https://github.com/zalando/logbook/pull/2301) | Implemented `StatusCodeBasedSink` and `LevelBasedHttpLogWriter` — HTTP status-code-aware log levels (2xx/3xx → TRACE, 4xx → WARN, 5xx → ERROR) | ✅ Merged |
-| 3 | **Adyen** | [adyen/adyen-java-api-library #1952](https://github.com/Adyen/adyen-java-api-library/pull/1952) | Fixed unescaped regex dots in `Service.createBaseURL` — replaced `replaceFirst()` with `String.replace()` for literal URL matching. Shipped in **v42.0.0** | ✅ Merged |
+| # | Org | Repository | What I did |
+|---|---|---|---|
+| 1 | **Zalando** | [zalando/logbook #2301](https://github.com/zalando/logbook/pull/2301) | Implemented `StatusCodeBasedSink` + `LevelBasedHttpLogWriter` — HTTP status-code-aware log levels (2xx/3xx → TRACE, 4xx → WARN, 5xx → ERROR) |
+| 2 | **Adyen** | [adyen/adyen-java-api-library #1952](https://github.com/Adyen/adyen-java-api-library/pull/1952) | Fixed unescaped regex dots in `Service.createBaseURL` — shipped in **SDK v42.0.0** |
 
-### ⏳ Open PRs — 8 in active review
+### ⏳ Open — 9 PRs in active review
 
-| # | Organization | Repository | Contribution | Status |
-|---|---|---|---|---|
-| 4 | **Debezium / Red Hat** | [debezium/debezium #7462](https://github.com/debezium/debezium/pull/7462) | Fix PostgreSQL connector slow startup with many custom types — `TypeRegistry.java` overhaul with ORDER BY, iterative resolution loop, and batch fallback query. Overall LGTM from core maintainer vjuranek | 🔄 Under Review |
-| 5 | **SigNoz** | [SigNoz/examples #63](https://github.com/SigNoz/examples/pull/63) | Spring Boot microservices distributed tracing demo — OpenTelemetry Java Agent auto-instrumentation, distributed traces verified in SigNoz dashboard | 🔄 Under Review |
-| 6 | **Picnic** | [PicnicSupermarket/error-prone-support #2264](https://github.com/PicnicSupermarket/error-prone-support/pull/2264) | New Refaster rule — detects `Optional.of(x).orElse(y)` dead-code anti-pattern where fallback is unreachable, rewrites to explicit `requireNonNull(x)` | 🔄 Under Review |
-| 7 | **Zalando** | [zalando/logbook (issue #2237)](https://github.com/zalando/logbook/issues/2237) | Added `SpringSecurityAttributeExtractor` — logs authenticated username in every HTTP request | 🔄 Under Review |
-| 8 | **Zalando** | [zalando/logbook (issue #2318)](https://github.com/zalando/logbook/issues/2318) | Fixed JSON formatter embedding non-JSON body (ciphertext/binary) as raw invalid JSON | 🔄 Under Review |
-| 9 | **Zalando** | [zalando/logbook (issue #2174)](https://github.com/zalando/logbook/issues/2174) | Fixed `LogbookClientHttpRequestInterceptor` crashing on startup without spring-web on classpath | 🔄 Under Review |
-| 10 | **Zalando** | [zalando/logbook (issue #2115)](https://github.com/zalando/logbook/issues/2115) | Fixed `CachingHttpResponse` dropping attributes when `withoutBody()` is called | 🔄 Under Review |
-| 11 | **Zalando** | [zalando/problem #557](https://github.com/zalando/problem/pull/557) | Added `toBuilder()` method to the `Problem` interface for fluent problem mutation | 🔄 Under Review |
+| # | Org | Repository | What I did |
+|---|---|---|---|
+| 3 | **Picnic** | [error-prone-support #2275](https://github.com/PicnicSupermarket/error-prone-support/pull/2275) | Refaster rule: rewrites `Optional.of(x).orElse(y)` dead-code anti-pattern → `requireNonNull(x)`. Approach approved by Stephan202 |
+| 4 | **Debezium / Red Hat** | [debezium #7462](https://github.com/debezium/debezium/pull/7462) | PostgreSQL connector slow-startup fix — `TypeRegistry.java` with ORDER BY, iterative resolution loop, batch fallback. "Overall LGTM" from vjuranek |
+| 5 | **SigNoz** | [examples #63](https://github.com/SigNoz/examples/pull/63) | Spring Boot microservices distributed tracing demo with OpenTelemetry Java Agent auto-instrumentation |
+| 6 | **Zalando** | [logbook #2237](https://github.com/zalando/logbook/issues/2237) | `SpringSecurityAttributeExtractor` — logs authenticated username in every HTTP request |
+| 7 | **Zalando** | [logbook #2318](https://github.com/zalando/logbook/issues/2318) | Fixed JSON formatter embedding non-JSON bodies (ciphertext/binary) as raw invalid JSON |
+| 8 | **Zalando** | [logbook #2174](https://github.com/zalando/logbook/issues/2174) | Fixed `LogbookClientHttpRequestInterceptor` crashing on startup without spring-web on classpath |
+| 9 | **Zalando** | [logbook #2115](https://github.com/zalando/logbook/issues/2115) | Fixed `CachingHttpResponse` dropping attributes when `withoutBody()` is called |
+| 10 | **Zalando** | [problem #557](https://github.com/zalando/problem/pull/557) | Added `toBuilder()` to the `Problem` interface for fluent problem mutation |
+| 11 | **NVlabs** | [sionna #1155](https://github.com/NVlabs/sionna/pull/1155) + [#1156](https://github.com/NVlabs/sionna/pull/1156) | Fixed 3GPP spec compliance bugs in NVIDIA Sionna SDK — led to NVIDIA AI Aerial Program membership |
 
-**Companies touched through OSS:** 🇳🇱 Zalando &nbsp;·&nbsp; 🇳🇱 Adyen &nbsp;·&nbsp; 🇳🇱 Picnic &nbsp;·&nbsp; 🇺🇸 Uber &nbsp;·&nbsp; 🌍 Debezium (Red Hat) &nbsp;·&nbsp; 🌍 SigNoz
+**Orgs touched:** 🇳🇱 Zalando &nbsp;·&nbsp; 🇳🇱 Adyen &nbsp;·&nbsp; 🇳🇱 Picnic &nbsp;·&nbsp; 🌍 Debezium (Red Hat) &nbsp;·&nbsp; 🌍 SigNoz &nbsp;·&nbsp; 🇺🇸 NVIDIA
+
+---
+
+## 🚀 Projects
+
+### [Sionna Visualizer — 6G Research Dashboard](https://github.com/Vinu2111/sionna-visualizer)
+*Angular 17 · Spring Boot 3 · Python FastAPI · PostgreSQL · JWT*
+
+The missing visual layer for NVIDIA Sionna (200,000+ downloads). A full-stack dashboard that makes 6G simulation results visual, comparable, and shareable with a Publication Pipeline, multi-simulator comparison, and Claude API integration for natural language simulation.
+
+NVIDIA core maintainer **Merlin Nimier-David** mentioned `@Vinu2111` by name in a GitHub discussion. Accepted into the **NVIDIA AI Aerial / 6G Developer Program**.
+
+→ [Live](https://sionna-visualizer.vercel.app) · [GitHub](https://github.com/Vinu2111/sionna-visualizer)
+
+---
+
+### [Picnic Store Intelligence](https://github.com/Vinu2111/picnic-store-intelligence)
+*Java 21 · Spring Boot 3.2 · PostgreSQL (Supabase) · Vanilla JS · Railway + Vercel*
+
+An architectural prototype exploring two problems I found in Picnic's Page Platform engineering blog series: **server-driven section rendering** and **per-customer section ranking**.
+
+The backend owns the entire page layout via a rule engine. The frontend is a dumb renderer with a UI component registry. A weighted scoring algorithm silently reranks sections per customer based on purchase behaviour — `score = (frequency × 0.5) + (recency × 0.3) + (time-of-day × 0.2)`.
+
+→ [Live](https://picnic-store-intelligence.vercel.app) · [API / Swagger](https://picnic-store-intelligence-production.up.railway.app/swagger-ui.html) · [GitHub](https://github.com/Vinu2111/picnic-store-intelligence)
 
 ---
 
@@ -50,20 +84,16 @@ Actively contributing to open source Java libraries used in production by compan
 
 | Layer | Technologies |
 |---|---|
-| **Languages** | Java · Python · SQL · Shell/Bash |
-| **Frameworks** | Spring Boot 3 · Spring Security · Spring Data JPA · Hibernate · FastAPI · Angular 17 |
+| **Languages** | Java · Python · SQL · JavaScript |
+| **Frameworks** | Spring Boot 3 · Spring Security · Spring Data JPA · FastAPI · Angular 17 |
 | **Databases** | MySQL · PostgreSQL |
-| **Cloud** | AWS (Certified Cloud Practitioner) · EC2 · S3 · RDS |
-| **Tools** | Docker · Maven · Git · Postman · IntelliJ IDEA |
+| **Cloud & Tools** | AWS (CCP certified) · Docker · Maven · Git · Postman · IntelliJ IDEA |
 | **6G / AI** | NVIDIA Sionna SDK · NVIDIA AI Aerial / 6G Developer Program |
 
 ---
 
-## 🚀 Featured Project
+## 📝 Writing
 
-### [Sionna Visualizer — 6G Research Dashboard](https://github.com/Vinu2111/sionna-visualizer)
+I post daily — backend engineering concepts, OSS contribution walkthroughs, and Java deep-dives.
 
-> Built the missing visual layer for NVIDIA Sionna — a full-stack dashboard that makes 6G simulation results visual, comparable, and shareable.
-> NVIDIA Sionna has **200,000+ downloads** with zero public dashboard previously existing. This solves that.
->
-> Core maintainer **Merlin Nimier-David** mentioned `@Vinu2111` by name in a GitHub discussion — direct public recognition from an NVIDIA engineer.
+→ [Hashnode](https://vinayak6g.hashnode.dev) &nbsp;·&nbsp; [Dev.to](https://dev.to/vinayakgote)
